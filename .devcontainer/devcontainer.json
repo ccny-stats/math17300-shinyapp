@@ -1,0 +1,29 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/rocker-org/devcontainer-templates/tree/main/src/r-ver
+{
+	"name": "math17300-shinyapp",
+	// Or use a Dockerfile or Docker Compose file. 
+	// More info: https://containers.dev/guide/dockerfile
+	// "image": "//Dockerfile",
+	"build": { "dockerfile": "Dockerfile",
+				"target": "development"},
+	"customizations": {
+		"vscode": {
+		  "extensions": ["reditorsupport.r", "quarto.quarto",
+		  				"ms-azuretools.vscode-docker",
+ 					  "christian-kohler.path-intellisense",
+					"mechatroner.rainbow-csv"]
+		}
+	  }
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "R -q -e 'renv::install()'",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
